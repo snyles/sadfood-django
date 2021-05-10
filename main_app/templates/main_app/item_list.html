@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+
 <h1>Item List</h1>
 
 {% for item in item_list %}
@@ -7,3 +10,6 @@
     </div>
   </a>
 {% endfor %}
+
+{% endblock %}
+
