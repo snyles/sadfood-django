@@ -26,6 +26,7 @@ class Item(models.Model):
     choices=FINISH,
     default=FINISH[0][0]
   )
+  dimensions = models.CharField(max_length=50)
   categories = models.ManyToManyField(Category)
 
   def get_absolute_url(self):
