@@ -48,11 +48,11 @@ class CategoryList(UserPassesTestMixin, ListView):
 
   def test_func(self):
     return self.request.user.groups.filter(name='Manager').exists()
-    
+
 class CategoryCreate(UserPassesTestMixin, CreateView):
   model = Category
   fields = '__all__'
-  success_url = '/category/list/'
+  success_url = '/manage/category/list/'
 
   def test_func(self):
     return self.request.user.groups.filter(name='Manager').exists()
@@ -60,14 +60,14 @@ class CategoryCreate(UserPassesTestMixin, CreateView):
 class CategoryUpdate(UserPassesTestMixin, UpdateView):
   model = Category
   fields = '__all__'
-  sucess_url = '/category/list'
+  success_url = '/manage/category/list/'
 
   def test_func(self):
     return self.request.user.groups.filter(name='Manager').exists()
 
 class CategoryDelete(UserPassesTestMixin, DeleteView):
   model = Category
-  success_url = '/category/list/'
+  success_url = '/manage/category/list/'
 
   def test_func(self):
     return self.request.user.groups.filter(name='Manager').exists()

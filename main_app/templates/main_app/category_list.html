@@ -4,7 +4,7 @@
 <h1>Category List</h1>
 
 {% for category in category_list %}
-  {{category}}<br />
+  <a href={% url category_update %}>{{category}}</a>
 {% endfor %}
 
 {% endblock %}

@@ -10,6 +10,11 @@ from .models import Item, Category, Profile
 def home(request):
   return render(request, 'home.html')
 
+def category(request, cat):
+  items = Item.objects.all()
+  cat_items = items.filter(categories__name__iexact=cat)
+  return render(request, 'shop.html', {'category': cat, 'items': cat_items})
+
 def signup(request):
   error_message = ''
   if request.method == 'POST':
