@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<h1>{{object.name}}</h1>
-<p>{{object.description}}</p>
-<p>{{object.materials}}</p>
-<p>{{object.price}}</p>
-<p>{{object.finish}}</p>
-<p>{{object.dimensions}}</p>
-{% for cat in object.categories.all %}
-  <p>{{cat}}</p>
-{% endfor %}
-
-<a href="{% url 'item_update' object.id %}">Edit</a>
-<a href="{% url 'item_delete' object.id %}">Delete</a>
+{% include 'manage_nav.html' %}
+<article>
+  <h1>{{object.name}}</h1>
+  <p>{{object.description}}</p>
+  <p>{{object.materials}}</p>
+  <p>{{object.price}}</p>
+  <p>{{object.finish}}</p>
+  <p>{{object.dimensions}}</p>
+  {% for cat in object.categories.all %}
+    <p>{{cat}}</p>
+  {% endfor %}
+  <a href="{% url 'item_update' object.id %}">Edit</a>
+  <a href="{% url 'item_delete' object.id %}">Delete</a>
+</article>
 {% endblock %}
