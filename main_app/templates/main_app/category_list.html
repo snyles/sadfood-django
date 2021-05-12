@@ -4,7 +4,7 @@
 <h1>Category List</h1>
 
 {% for category in category_list %}
-  <a href={% url category_update %}>{{category}}</a>
+  <a href="{% url 'category_update' category.id %}">{{category}}</a>
 {% endfor %}
 
 {% endblock %}

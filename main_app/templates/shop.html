@@ -1,13 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
+<aside>
+  <h2>Categories</h2>
+  <ul>
+    <li><a href='{% url 'shop' %}'>All</a></li>
 
-<h1>{{ category|title }}</h1>
-{% for item in items %}
-{{item.name}}<br />
-{% for category in item.categories.all %}
-{{category}}
-{% endfor%}
-<br>
-{% endfor %}
+    {% for cat in catlist %}
+    <li><a href='{% url 'category' cat|lower %}'>{{cat}}</a></li>
+    {% endfor %}
+  </ul>
+</aside>
+<article>
+  <h1>{{ category|title|default:'Shop' }}</h1>
+  <div class='cardwrap'>
+  {% for item in items %}
+    {% include 'item_card.html' %}
 
+    {% comment %} {% for category in item.categories.all %}
+      {{category}}
+    {% endfor%} {% endcomment %}
+  {% endfor %}
+  </div>
+</article>
 {% endblock %}

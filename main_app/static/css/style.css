@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
+
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+:root {
+    font-size: 62.5%
+}
+
+body {
+  /* Use a system font, if none are available use an available sans-sarif font */
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  /* background-color: #333; */
+  color: #333;
+  text-align: center;
+
+  /* #f77f00; */
+  --link-orange: #faa307;
+  /* --orange-primary: #ffa500; */
+  --orange-primary: #ffa216;
+
+   /* background: linear-gradient(20deg, #333, #555) */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav {
+  display: flex;
+  font-size: 2rem;
+  margin: 0;
+  background: #ccc;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul.right {
+  margin-left: auto;
+}
+
+nav ul > li {
+  padding: 1rem 2rem;
+}
+
+nav ul > li:hover {
+  background: #999;
+}
+
+main { 
+  flex: 1;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside {
+  padding: 2rem 0 0 0;
+  flex: 1;
+  background: #aaa;
+}
+aside h2 {
+  margin: 1rem 0 0 0;
+}
+aside ul {
+  margin: 1rem auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+}
+
+aside li > a {
+  font-size: 1.8rem;
+}
+
+article {
+  padding: 2rem 0 0 0;
+  flex: 4;
+}
+h1, h2, h3, h4 {
+  margin: 1rem 0;
+}
+h1 {
+  font-size: 3rem;
+}
+
+footer {
+  padding: 1rem;
+  background: #ccc;
+}
+
+.cardwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-card {
+  margin: 0 0 2rem 2rem;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  background: #ccc;
+}
+
+.item-photo img{
+  width: 200px;
+}
+.item-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+.item-info span {
+  margin: 0 0 1rem 0;
+}

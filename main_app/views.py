@@ -10,10 +10,20 @@ from .models import Item, Category, Profile
 def home(request):
   return render(request, 'home.html')
 
-def category(request, cat):
+def shop(request):
   items = Item.objects.all()
-  cat_items = items.filter(categories__name__iexact=cat)
-  return render(request, 'shop.html', {'category': cat, 'items': cat_items})
+  categories = Category.objects.all()
+  return render(request, 'shop.html', {
+    'items': items, 'catlist': categories})
+
+def about(request):
+  pass
+
+def category(request, cat):
+  categories = Category.objects.all()
+  cat_items = Item.objects.filter(categories__name__iexact=cat)
+  return render(request, 'shop.html', {
+    'category': cat, 'items': cat_items, 'catlist': categories})
 
 def signup(request):
   error_message = ''
