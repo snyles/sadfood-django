@@ -16,8 +16,8 @@ def shop(request):
   return render(request, 'shop.html', {
     'items': items, 'catlist': categories})
 
-def about(request):
-  pass
+class ItemDetail(DetailView):
+  model = Item
 
 def category(request, cat):
   categories = Category.objects.all()

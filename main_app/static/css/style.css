@@ -67,7 +67,7 @@ nav ul.right {
 }
 
 nav ul > li {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 nav ul > li:hover {
@@ -104,7 +104,7 @@ aside li > a {
 
 article {
   padding: 2rem 0 0 0;
-  flex: 4;
+  flex: 4 2;
 }
 h1, h2, h3, h4 {
   margin: 1rem 0;

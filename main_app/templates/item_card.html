@@ -1,9 +1,13 @@
 <div class='item-card'>
   <div class='item-photo'>
+    <a href='{% url "item_detail" item.id %}'>
     <img src='https://picsum.photos/200' />
+    </a>
   </div>
   <div class='item-info'>
-    <span>{{item.name}}</span>
+    <a href='{% url "item_detail" item.id %}'>
+      <span>{{item.name}}</span>
+    </a>
     <span>{{item.price}}</span>
     <span>{{item.description}}</span>
   </div>
