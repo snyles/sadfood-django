@@ -145,3 +145,16 @@ footer {
 .item-info span {
   margin: 0 0 1rem 0;
 }
+
+.li-spacer { 
+  text-align: center;
+}
+
+.delete-btn {
+  display: inline-block;
+  padding: 1rem;
+  border: solid 1px #ccc;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  color: rgb(163, 24, 24);
+}

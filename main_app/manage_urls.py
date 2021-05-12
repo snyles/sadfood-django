@@ -2,7 +2,7 @@ from django.urls import path
 from . import manage_views
 
 urlpatterns = [
-
+  path('', manage_views.ItemList.as_view(), name='manage'),
   path('items/', manage_views.ItemList.as_view(), name='item_list'),
   path('items/create/', manage_views.ItemCreate.as_view(), name='item_create'),
   path('items/<int:pk>/update/', manage_views.ItemUpdate.as_view(), name='item_update'),
