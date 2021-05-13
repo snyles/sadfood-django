@@ -7,7 +7,7 @@
   <div class='two-cols'>
     <div class='col-one'>
       {% for photo in object.photo_set.all %}
-        <img src="{{photo.url}}" />
+        <img src="{{photo.url}}" class='item-detail-photo' />
       {% empty %}
         <p>No photo uploaded</p>
       {% endfor %}

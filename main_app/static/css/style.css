@@ -191,3 +191,7 @@ footer {
   margin: 1rem 0;
   color: rgb(163, 24, 24);
 }
+
+item-detail-photo {
+  max-width: 300px;
+}
