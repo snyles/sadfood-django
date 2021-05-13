@@ -34,6 +34,7 @@ def add_photo(request, item_id):
 class ItemCreate(UserPassesTestMixin, CreateView):
   model = Item
   fields = '__all__'
+  success_url = '/manage/items'
 
   def test_func(self):
     return self.request.user.groups.filter(name='Manager').exists()
