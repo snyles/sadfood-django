@@ -85,7 +85,7 @@ main {
 }
 
 aside {
-  padding: 4rem 0 0 0;
+  padding: 4rem 2rem 0 2rem;
   margin: 0 4rem 0 0;
   flex: 1;
 }
@@ -106,7 +106,7 @@ aside li > a {
 
 article {
   padding: 2rem 0 0 0;
-  flex: 5;
+  flex: 8;
 }
 h1, h2, h3, h4 {
   margin: 1rem 0;
