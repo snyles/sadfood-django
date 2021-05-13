@@ -3,16 +3,18 @@
 
 {% include 'manage_nav.html' %}
 <article>
-<h1>Item List</h1>
   <div class='center'>
+  <h1>Item List</h1>
+    <div class='center'>
 
-{% for item in item_list %}
-  <a href="{% url 'item_update' item.id %}">
-    <div>
-      {{ item.name }}
+  {% for item in item_list %}
+    <p>
+      <a href="{% url 'item_update' item.id %}">
+        {{ item.name }}
+      </a>
+    </p>
+  {% endfor %}
     </div>
-  </a>
-{% endfor %}
   </div>
 </article>
 {% endblock %}

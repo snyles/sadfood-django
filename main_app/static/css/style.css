@@ -154,6 +154,11 @@ footer {
   background: var(--dark-blue);
 }
 
+.fieldWrapper {
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
 .cardwrap {
   display: flex;
   flex-wrap: wrap;
