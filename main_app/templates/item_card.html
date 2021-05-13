@@ -1,7 +1,12 @@
 <div class='item-card'>
   <div class='item-photo'>
     <a href='{% url "item_detail" item.id %}'>
-    <img src='https://picsum.photos/200' />
+    {% comment %} <img src='https://picsum.photos/200' /> {% endcomment %}
+    {% for photo in item.photo_set.all %}
+      <img src="{{photo.url}}" />
+    {% empty %}
+      <p>No photo uploaded</p>
+    {% endfor %}
     </a>
   </div>
   <div class='item-info'>
