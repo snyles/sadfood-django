@@ -17,6 +17,12 @@
   {% if object %}
     <a href="{% url 'item_delete' object.id %}" class='delete-btn'>Delete Item</a>
     <hr />
+    <h1>Photos</h1>
+    {% for photo in item.photo_set.all %}
+      <img src="{{photo.url}}" />
+    {% empty %}
+      <p>No photo uploaded</p>
+    {% endfor %}
     <h1>Add Photo</h1>
     <form action="{% url 'add_photo' object.id %}" enctype="multipart/form-data" method="POST">
     {% csrf_token %}

@@ -28,7 +28,7 @@ def add_photo(request, item_id):
       photo.save()
     except Exception as err:
       print('An error occurred uploading file to S3: %s' % err)
-  return redirect('item_list', item_id=item_id)
+  return redirect('item_list')
 
 
 class ItemCreate(UserPassesTestMixin, CreateView):
