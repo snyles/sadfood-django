@@ -20,7 +20,7 @@
     <hr />
     <h1>Photos</h1>
     {% for photo in item.photo_set.all %}
-      <img src="{{photo.url}}" class='item-detail-image' />
+      <img src="{{photo.url}}" class='item-detail-photo' />
     {% empty %}
       <p>No photo uploaded</p>
     {% endfor %}
