@@ -16,7 +16,7 @@
       <p><strong>Description: </strong>{{object.description}}</p>
       <p><strong>Materials: </strong>{{object.materials}}</p>
       <p><strong>Price: </strong>${{object.price}}</p>
-      <p><strong>Finish: </strong>{{object.finish}}</p>
+      <p><strong>Finish: </strong>{{object.get_finish_display}}</p>
       <p><strong>Dimensions: </strong>{{object.dimensions}}</p>
       <p><strong>Categories: </strong>
       {% for cat in object.categories.all %}
