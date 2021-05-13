@@ -31,11 +31,13 @@ body {
   /* background-color: #333; */
   color: #333;
   text-align: center;
+  background: #f3f3f3;
 
-  /* #f77f00; */
-  --link-orange: #faa307;
-  /* --orange-primary: #ffa500; */
-  --orange-primary: #ffa216;
+  --dark-blue: #A2D2FF;
+  --light-blue: #bde0fe;
+  --light-yellow: #fff1d6;
+  --dark-pink: #ffafcc;
+  --light-pink: #FFC8DD;
 
    /* background: linear-gradient(20deg, #333, #555) */
 }
@@ -50,7 +52,7 @@ nav {
   display: flex;
   font-size: 2rem;
   margin: 0;
-  background: #ccc;
+  background: var(--dark-blue);
 }
 
 nav ul {
@@ -71,7 +73,7 @@ nav ul > li {
 }
 
 nav ul > li:hover {
-  background: #999;
+  background: var(--light-blue);
 }
 
 main { 
@@ -83,9 +85,9 @@ main {
 }
 
 aside {
-  padding: 2rem 0 0 0;
+  padding: 4rem 0 0 0;
   flex: 1;
-  background: #aaa;
+  background: var(--light-pink);
 }
 aside h2 {
   margin: 1rem 0 0 0;
@@ -148,7 +150,8 @@ article div.col-two {
 
 footer {
   padding: 1rem;
-  background: #ccc;
+  font-size: 1.2rem;
+  background: var(--dark-blue);
 }
 
 .cardwrap {
@@ -161,7 +164,7 @@ footer {
   width: 400px;
   height: 200px;
   display: flex;
-  background: #ccc;
+  border-radius: 1rem;
 }
 
 .item-photo img{
