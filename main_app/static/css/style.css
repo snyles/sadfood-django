@@ -165,7 +165,11 @@ footer {
   height: 200px;
   display: flex;
   border-radius: 1rem;
-  background: var(--light-pink);
+  /* background: var(--light-pink); */
+}
+
+.item-card .name {
+  font-size: 2.6rem;
 }
 
 .item-photo img{
