@@ -123,6 +123,29 @@ article div.center {
   width: max-content;
 }
 
+article div.two-cols {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  margin: 0 auto;
+}
+
+article div.two-cols > div {
+  padding: 2rem;
+}
+
+article div.col-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+article div.col-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 footer {
   padding: 1rem;
   background: #ccc;
