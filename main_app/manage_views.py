@@ -47,7 +47,7 @@ class ItemUpdate(UserPassesTestMixin, UpdateView):
 
 class ItemDelete(UserPassesTestMixin, DeleteView):
   model = Item
-  success_url = '/items/'
+  success_url = '/manage/items'
 
   def test_func(self):
     return self.request.user.groups.filter(name='Manager').exists()

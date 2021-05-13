@@ -113,6 +113,16 @@ h1 {
   font-size: 3rem;
 }
 
+article p {
+  text-align: left;
+}
+
+article div.center {
+  display: inline-block;
+  margin: 0 auto;
+  width: max-content;
+}
+
 footer {
   padding: 1rem;
   background: #ccc;

@@ -3,6 +3,7 @@
 {% block content %}
 {% include 'manage_nav.html' %}
 <article>
+  <div class="center">
   <h1>Delete Item</h1>
 
   <h4>Are you sure you want to delete {{ object }}?</h4>
@@ -11,5 +12,6 @@
     {% csrf_token %}
     <input type="submit" value="Yes - Delete!" class="btn">
   </form>
+  </div>
 </article>
 {% endblock %}

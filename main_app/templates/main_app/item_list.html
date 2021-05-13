@@ -4,6 +4,7 @@
 {% include 'manage_nav.html' %}
 <article>
 <h1>Item List</h1>
+  <div class='center'>
 
 {% for item in item_list %}
   <a href="{% url 'item_update' item.id %}">
@@ -12,7 +13,7 @@
     </div>
   </a>
 {% endfor %}
-
+  </div>
 </article>
 {% endblock %}
 

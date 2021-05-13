@@ -3,6 +3,7 @@
 {% include 'manage_nav.html' %}
 
 <article>
+  <div class='center'>
   {% if object %}
     <h1>Edit {{object.name}}</h1>
   {% else %}
@@ -31,5 +32,6 @@
     <input type="submit" class="btn" value="Upload Photo">
 </form>
   {% endif %}
+  <div class='center'>
 </article>
 {% endblock %}

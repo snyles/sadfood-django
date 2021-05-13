@@ -4,10 +4,11 @@
 
 <article>
 <h1>Category List</h1>
-
-{% for category in category_list %}
-  <a href="{% url 'category_update' category.id %}">{{category}}</a>
-{% endfor %}
+  <div class="center">
+  {% for category in category_list %}
+    <p><a href="{% url 'category_update' category.id %}">{{category}}</a></p>
+  {% endfor %}
+  </center>
 </article>
 
 {% endblock %}
