@@ -1,6 +1,6 @@
 # SadFood Toys
 
-SadFood Toys is a showcase for the world renounced crochet extraordinaire Jes Munk. Feast your eyes on various amigrumi creations, which you will soon be able to purchase!
+SadFood Toys is a showcase for the world renowned crochet extraordinaire Jes Munk. Feast your eyes on various amigrumi creations, which you will soon be able to purchase!
 
 You can see her Etsy shop [here](https://etsy.com/shop/jeslovestoast)
 
